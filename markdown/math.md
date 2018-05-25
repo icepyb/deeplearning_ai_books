@@ -119,7 +119,7 @@ ${{{F}'}_{y}}(x,y)$分别表示$F(x,y)$对$x$和$y$的偏导数
 （6）莱布尼兹公式：若$u(x)\,,v(x)$均$n$阶可导，则
  ${{(uv)}^{(n)}}=\sum\limits_{i={0}}^{n}{c_{n}^{i}{{u}^{(i)}}{{v}^{(n-i)}}}$，其中${{u}^{({0})}}=u$，${{v}^{({0})}}=v$
 
-**9.微分中值定理，，泰勒公式**
+**9.微分中值定理，泰勒公式**
 
 **Th1:**(费马定理)
 
@@ -327,9 +327,9 @@ $|A| = \prod_{i = 1}^{n}\lambda_{i}​$
 
 (3) 若$A$可逆，则$A^{*} = |A|A^{- 1},{(A^{*})}^{*} = \frac{1}{|A|}A$
 
-(4) 若$A$为$n$阶方阵，则：
+(4) 若$A​$为$n​$阶方阵，则：
 
-$r(A^{*}) =\{ \begin{matrix}  & n,\quad r(A) = n \\  & 1,\quad r(A) = n -1 \\  & 0,\quad r(A) < n - 1 \\ \end{matrix}$
+$r(A^*)=\begin{cases}n,\quad r(A)=n\\ 1,\quad r(A)=n-1\\ 0,\quad r(A)<n-1\end{cases}$
 
 **6.有关**$\mathbf{A}^{\mathbf{- 1}}$**的结论**
 
@@ -500,13 +500,13 @@ ${kλ},{aλ} + b,\lambda^{2},\lambda^{m},f(\lambda),\lambda,\lambda^{- 1},\frac{
 
 **3.矩阵可相似对角化的充分必要条件**
 
-(1)设$A$为$n$阶方阵，则$A$可对角化$\Leftrightarrow$对每个$k_{i}$重根特征值$\lambda_{i}$，有$nr(\lambda_{i}E - A) = k_{i}$
+(1)设$A$为$n$阶方阵，则$A$可对角化$\Leftrightarrow$对每个$k_{i}$重根特征值$\lambda_{i}$，有$n-r(\lambda_{i}E - A) = k_{i}$
 
 (2) 设$A$可对角化，则由$P^{- 1}{AP} = \Lambda,$有$A = {PΛ}P^{-1}$，从而$A^{n} = P\Lambda^{n}P^{- 1}$
 
 (3) 重要结论
 
-1) 若$A \sim B,C \sim D$，则$\begin{bmatrix}  A & O \\ O & C \\\end{bmatrix} \sim \begin{bmatrix} B & O \\  O & D \\\end{bmatrix}$.
+1) 若$A \sim B,C \sim D​$，则$\begin{bmatrix}  A & O \\ O & C \\\end{bmatrix} \sim \begin{bmatrix} B & O \\  O & D \\\end{bmatrix}​$.
 
 2) 若$A \sim B$，则$f(A) \sim f(B),\left| f(A) \right| \sim \left| f(B)\right|$，其中$f(A)$为关于$n$阶方阵$A$的多项式。
 
@@ -592,12 +592,11 @@ $\Leftrightarrow$存在正交矩阵$Q$，使$Q^{T}{AQ} = Q^{- 1}{AQ} =\begin{pma
 (6) 互斥事件（互不相容）：$A\bigcap B$=$\varnothing$。
 
 (7) 互逆事件（对立事件）：
-$A\bigcap B=\varnothing ,A\bigcup B=\Omega ,A=\bar{B}B=\bar{A}$
+$A\bigcap B=\varnothing ,A\bigcup B=\Omega ,A=\bar{B},B=\bar{A}$
 **2.运算律**
 (1) 交换律：$A\bigcup B=B\bigcup A,A\bigcap B=B\bigcap A$
-(2) 结合律：$A\bigcup B\bigcup C=A\bigcup B\bigcup C$；
-$A\bigcap B\bigcap C=A\bigcap B\bigcap C$
-(3) 分配律：$A\bigcup B\bigcap C=A\bigcap C\bigcup B\bigcap C$
+(2) 结合律：$(A\bigcup B)\bigcup C=A\bigcup (B\bigcup C)$
+(3) 分配律：$(A\bigcap B)\bigcap C=A\bigcap (B\bigcap C)$
 **3.德$\centerdot $摩根律**
 
 $\overline{A\bigcup B}=\bar{A}\bigcap \bar{B}$                 $\overline{A\bigcap B}=\bar{A}\bigcup \bar{B}$
@@ -607,9 +606,9 @@ ${{A}_{1}}{{A}_{2}}\cdots {{A}_{n}}$两两互斥，且和事件为必然事件�
 
 **5.概率的基本公式**
 (1)条件概率:
- $PB|A=\frac{PAB}{PA}AB$
+ $P(B|A)=\frac{P(AB)}{P(A)}$,表示$A$发生的条件下，$B$发生的概率。
 (2)全概率公式：
-$PA=\sum\limits_{i=1}^{n}{P(A|{{B}_{i}})P({{B}_{i}}),{{B}_{i}}{{B}_{j}}}=\varnothing ,i\ne j,\underset{i=1}{\overset{n}{\mathop{\bigcup }}}\,{{B}_{i}}=\Omega $
+$P(A)=\sum\limits_{i=1}^{n}{P(A|{{B}_{i}})P({{B}_{i}}),{{B}_{i}}{{B}_{j}}}=\varnothing ,i\ne j,\underset{i=1}{\overset{n}{\mathop{\bigcup }}}\,{{B}_{i}}=\Omega $
 (3) Bayes公式：
 
 $P({{B}_{j}}|A)=\frac{P(A|{{B}_{j}})P({{B}_{j}})}{\sum\limits_{i=1}^{n}{P(A|{{B}_{i}})P({{B}_{i}})}},j=1,2,\cdots ,n$
@@ -624,7 +623,7 @@ $P({{A}_{1}}{{A}_{2}}\cdots {{A}_{n}})=P({{A}_{1}})P({{A}_{2}}|{{A}_{1}})P({{A}_
 $\Leftrightarrow P(AB)=P(A)P(B)$;$P(BC)=P(B)P(C)$ ;$P(AC)=P(A)P(C)$;
 (3)$A$，$B$，$C$相互独立
 $\Leftrightarrow P(AB)=P(A)P(B)$;     $P(BC)=P(B)P(C)$ ;
-$P(AC)=P(A)P(C);$     $P(ABC)=P(A)P(B)P(C)$
+$P(AC)=P(A)P(C)$  ;   $P(ABC)=P(A)P(B)P(C)$
 
 **7.独立重复试验** 
 
@@ -663,7 +662,9 @@ $A$与$B$互逆$\Rightarrow$ $A$与$B$互斥，但反之不成立，$A$与$B$互
 
 (2) $F(x)$单调不减
 
-(3) 右连续$F(x + 0) = F(x)$ (4)$F( - \infty) = 0,F( + \infty) = 1$
+(3) 右连续$F(x + 0) = F(x)$ 
+
+(4) $F( - \infty) = 0,F( + \infty) = 1$
 
 **3.离散型随机变量的概率分布**
 
@@ -671,7 +672,13 @@ $P(X = x_{i}) = p_{i},i = 1,2,\cdots,n,\cdots\quad\quad p_{i} \geq 0,\sum_{i =1}
 
 **4.连续型随机变量的概率密度**
 
-概率密度$f(x)$;非负可积，且:(1)$f(x) \geq 0,$ (2)$\int_{- \infty}^{+\infty}{f(x){dx} = 1}$ (3)$x$为$f(x)$的连续点，则:
+概率密度$f(x)$;非负可积，且:
+
+(1)$f(x) \geq 0,$ 
+
+(2)$\int_{- \infty}^{+\infty}{f(x){dx} = 1}$ 
+
+(3)$x$为$f(x)$的连续点，则:
 
 $f(x) = F'(x)$分布函数$F(x) = \int_{- \infty}^{x}{f(t){dt}}$
 
@@ -750,7 +757,7 @@ $P\{ Y = y_{j}|X = x_{i}\} = \frac{p_{{ij}}}{p_{i \cdot}}$
 
 (1) 二维均匀分布：$(x,y) \sim U(D)$ ,$f(x,y) = \begin{cases} \frac{1}{S(D)},(x,y) \in D \\   0,其他  \end{cases}$
 
-(2) 二维正态分布：($X,Y)\sim N(\mu_{1},\mu_{2},\sigma_{1}^{2},\sigma_{2}^{2},\rho)$$X,Y)\sim N(\mu_{1},\mu_{2},\sigma_{1}^{2},\sigma_{2}^{2},\rho)$
+(2) 二维正态分布：$(X,Y)\sim N(\mu_{1},\mu_{2},\sigma_{1}^{2},\sigma_{2}^{2},\rho)$,$(X,Y)\sim N(\mu_{1},\mu_{2},\sigma_{1}^{2},\sigma_{2}^{2},\rho)$
 
 $f(x,y) = \frac{1}{2\pi\sigma_{1}\sigma_{2}\sqrt{1 - \rho^{2}}}.\exp\left\{ \frac{- 1}{2(1 - \rho^{2})}\lbrack\frac{{(x - \mu_{1})}^{2}}{\sigma_{1}^{2}} - 2\rho\frac{(x - \mu_{1})(y - \mu_{2})}{\sigma_{1}\sigma_{2}} + \frac{{(y - \mu_{2})}^{2}}{\sigma_{2}^{2}}\rbrack \right\}$
 
@@ -793,7 +800,7 @@ $f_{Y}(y) = \int_{- \infty}^{+ \infty}{f(x,y)dx}$
 
 3) $C_{1}X + C_{2}Y\sim N(C_{1}\mu_{1} + C_{2}\mu_{2},C_{1}^{2}\sigma_{1}^{2} + C_{2}^{2}\sigma_{2}^{2} + 2C_{1}C_{2}\sigma_{1}\sigma_{2}\rho)$
 
-4) ${\ X}$关于Y=y的条件分布为： $N(\mu_{1} + \rho\frac{\sigma_{1}}{\sigma_{2}}(y - \mu_{2}),\sigma_{1}^{2}(1 - \rho^{2}))$
+4) ${\ X}$关于$Y=y$的条件分布为： $N(\mu_{1} + \rho\frac{\sigma_{1}}{\sigma_{2}}(y - \mu_{2}),\sigma_{1}^{2}(1 - \rho^{2}))$
 
 5) $Y$关于$X = x$的条件分布为： $N(\mu_{2} + \rho\frac{\sigma_{2}}{\sigma_{1}}(x - \mu_{1}),\sigma_{2}^{2}(1 - \rho^{2}))$
 
@@ -818,7 +825,7 @@ $C_{1}X + C_{2}Y\tilde{\ }N(C_{1}\mu_{1} + C_{2}\mu_{2},C_{1}^{2}\sigma_{1}^{2} 
 
 (2) $E(C_{1}X + C_{2}Y) = C_{1}E(X) + C_{2}E(Y)$
 
-(3) 若X和Y独立，则$E(XY) = E(X)E(Y)$ 
+(3) 若$X$和$Y$独立，则$E(XY) = E(X)E(Y)$ 
 
 (4)$\left\lbrack E(XY) \right\rbrack^{2} \leq E(X^{2})E(Y^{2})$
 
@@ -834,7 +841,7 @@ $C_{1}X + C_{2}Y\tilde{\ }N(C_{1}\mu_{1} + C_{2}\mu_{2},C_{1}^{2}\sigma_{1}^{2} 
 
 (1)$\ D(C) = 0,D\lbrack E(X)\rbrack = 0,D\lbrack D(X)\rbrack = 0$
 
-(2)$\ X$与$Y$相互独立，则$D(X \pm Y) = D(X) + D(Y)$
+(2) $X$与$Y$相互独立，则$D(X \pm Y) = D(X) + D(Y)$
 
 (3)$\ D\left( C_{1}X + C_{2} \right) = C_{1}^{2}D\left( X \right)$
 
